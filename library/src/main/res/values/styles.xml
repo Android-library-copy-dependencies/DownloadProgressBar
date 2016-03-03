@@ -6,16 +6,16 @@
     </style>
 
     <declare-styleable name="DownloadProgressView">
-        <attr name="circleRadius" format="dimension"/>
-        <attr name="strokeWidth" format="dimension"/>
-        <attr name="lineWidth" format="dimension"/>
-        <attr name="progressDuration" format="integer"/>
-        <attr name="resultDuration" format="integer"/>
-        <attr name="progressBackgroundColor" format="color"/>
-        <attr name="drawingColor" format="color"/>
-        <attr name="progressColor" format="color"/>
-        <attr name="circleBackgroundColor" format="color"/>
-        <attr name="overshootValue" format="float"/>
+        <attr name="dpb_circleRadius" format="dimension"/>
+        <attr name="dpb_strokeWidth" format="dimension"/>
+        <attr name="dpb_lineWidth" format="dimension"/>
+        <attr name="dpb_progressDuration" format="integer"/>
+        <attr name="dpb_resultDuration" format="integer"/>
+        <attr name="dpb_progressBackgroundColor" format="color"/>
+        <attr name="dpb_drawingColor" format="color"/>
+        <attr name="dpb_progressColor" format="color"/>
+        <attr name="dpb_circleBackgroundColor" format="color"/>
+        <attr name="dpb_overshootValue" format="float"/>
     </declare-styleable>
 
 </resources>

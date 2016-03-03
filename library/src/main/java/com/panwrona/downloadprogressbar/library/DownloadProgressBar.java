@@ -103,17 +103,17 @@ public class DownloadProgressBar extends View {
     private void initAttrs(Context context, AttributeSet attrs) {
         TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.DownloadProgressView, 0, 0);
         try {
-            mRadius = array.getDimension(R.styleable.DownloadProgressView_circleRadius, 0);
-            mStrokeWidth = array.getDimension(R.styleable.DownloadProgressView_strokeWidth, 0);
-            mLineWidth = array.getDimension(R.styleable.DownloadProgressView_lineWidth, 0);
+            mRadius = array.getDimension(R.styleable.DownloadProgressView_dpb_circleRadius, 0);
+            mStrokeWidth = array.getDimension(R.styleable.DownloadProgressView_dpb_strokeWidth, 0);
+            mLineWidth = array.getDimension(R.styleable.DownloadProgressView_dpb_lineWidth, 0);
             mLengthFix = (float) (mLineWidth / (2*Math.sqrt(2)));
-            mProgressDuration = array.getInteger(R.styleable.DownloadProgressView_progressDuration, DEFAULT_PROGRESS_DURATION);
-            mResultDuration = array.getInteger(R.styleable.DownloadProgressView_resultDuration, DEFAULT_RESULT_DURATION);
-            mProgressBackgroundColor = array.getColor(R.styleable.DownloadProgressView_progressBackgroundColor, 0);
-            mDrawingColor = array.getColor(R.styleable.DownloadProgressView_drawingColor, 0);
-            mProgressColor = array.getColor(R.styleable.DownloadProgressView_progressColor, 0);
-            mCircleBackgroundColor = array.getColor(R.styleable.DownloadProgressView_circleBackgroundColor, 0);
-            mOvershootValue = array.getFloat(R.styleable.DownloadProgressView_overshootValue, DEFAULT_OVERSHOOT_VALUE);
+            mProgressDuration = array.getInteger(R.styleable.DownloadProgressView_dpb_progressDuration, DEFAULT_PROGRESS_DURATION);
+            mResultDuration = array.getInteger(R.styleable.DownloadProgressView_dpb_resultDuration, DEFAULT_RESULT_DURATION);
+            mProgressBackgroundColor = array.getColor(R.styleable.DownloadProgressView_dpb_progressBackgroundColor, 0);
+            mDrawingColor = array.getColor(R.styleable.DownloadProgressView_dpb_drawingColor, 0);
+            mProgressColor = array.getColor(R.styleable.DownloadProgressView_dpb_progressColor, 0);
+            mCircleBackgroundColor = array.getColor(R.styleable.DownloadProgressView_dpb_circleBackgroundColor, 0);
+            mOvershootValue = array.getFloat(R.styleable.DownloadProgressView_dpb_overshootValue, DEFAULT_OVERSHOOT_VALUE);
         } finally {
             array.recycle();
         }
